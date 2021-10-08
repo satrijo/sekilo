@@ -14,5 +14,5 @@ app.use(express.static(path.join(__dirname, 'public')))
 // Definisikan Router pada path "/api"
 app.use('/api', apiRouter)
 
-const PORT = process.env.PORT || 4000
+const PORT = process.env.PORT || 80
 app.listen(PORT, () => console.log(`Server listening on port ${PORT}`))
